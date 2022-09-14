@@ -1513,6 +1513,8 @@ bcrw_kappa_plot <- ggplot(f_bcrw_kappa_1mo, aes(x = day, y = return_rate,
 
 ### Figure 3 ####
 
+### Figure 4 ####
+
 (mcrw_kappa_plot + (et_m_kappa1 / et_m_kappa2 / et_m_kappa3) +
     mcrw_chi_plot + (et_m_chi1 / et_m_chi2 / et_m_chi3) +
     bcrw_kappa_plot + (et_b_kappa1 / et_b_kappa2 / et_b_kappa3) +
@@ -1520,7 +1522,7 @@ bcrw_kappa_plot <- ggplot(f_bcrw_kappa_1mo, aes(x = day, y = return_rate,
   # Layout
   plot_layout(nrow = 2, ncol = 4, widths = c(2, 1, 2, 1)) 
 
-### Figure 4 ####
+### Figure 5 ####
 
 ggplot(fid_ref, aes(x = day, y = return_rate)) +
   geom_line(alpha = 0.8) +
@@ -1530,3 +1532,5 @@ ggplot(fid_ref, aes(x = day, y = return_rate)) +
   ylim(0, 1) +
   ggtitle(" ") +
   theme(legend.position = "bottom", text = element_text(size = 16))
+
+### Figure 6 ####
